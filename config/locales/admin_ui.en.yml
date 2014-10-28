@@ -101,6 +101,7 @@ en:
       text_formatting:
         none: None
         html: HTML
+        markdown: Markdown
       types:
         file:
           delete_file: Delete file

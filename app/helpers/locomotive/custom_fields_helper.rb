@@ -37,7 +37,7 @@ module Locomotive
     end
 
     def options_for_text_formatting
-      %w(none html).map do |option|
+      %w(none markdown html).map do |option|
         [t("locomotive.custom_fields.text_formatting.#{option}"), option]
       end
     end
