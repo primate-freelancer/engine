@@ -16,6 +16,8 @@ class Locomotive.Views.EditableElements.TextView extends Backbone.View
   after_render: ->
     if @model.get('format') == 'html'
       @$('textarea').tinymce(@tinymce_settings())
+    else if @model.get('format') == 'markdown'
+      alert "markdown yoooo"
     else
       @$('textarea').bind 'keyup', (event) =>
         input = $(event.target)
